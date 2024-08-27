@@ -20,7 +20,7 @@ print(f"Uploaded file ID: {training_file_id}")
 # Step 3: Create a Fine-Tuning Job with gpt-4o
 fine_tuning_job = client.fine_tuning.jobs.create(
     training_file=training_file_id,
-    model="gpt-4o-2024-08-06"
+    model="gpt-4o-mini"
 )
 fine_tuned_model_name = fine_tuning_job.fine_tuned_model
 print(f"Fine-tuned model name: {fine_tuned_model_name}")
