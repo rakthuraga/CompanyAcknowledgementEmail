@@ -10,7 +10,7 @@ load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # Load user input from the JSON file
-with open('user_input_three.json', 'r') as file:
+with open('user_input_ten.json', 'r') as file:
     user_data = json.load(file)
 
 # Extract relevant information from the JSON file
